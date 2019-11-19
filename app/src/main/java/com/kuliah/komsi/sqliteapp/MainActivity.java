@@ -65,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
                 .setNegativeButton("Hapus", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        //DatabaseHelper.delete(id);
+                        databaseHelper.delete(id);
+                        loadData();
                     }
                 });
 

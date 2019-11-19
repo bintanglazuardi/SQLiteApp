@@ -92,28 +92,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return arrayList;
     }
 
-    /*public void open(View view){
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setMessage("Are you sure,You wanted to make decision");
-                alertDialogBuilder.setPositiveButton("Yes",
-                        new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface arg0, int arg1) {
-                                Toast.makeText(MainActivity.this,"You clicked yes button",Toast.LENGTH_LONG).show();
-                            }
-                        });
-
-                alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finish();
-                    }
-                });
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
-    }*/
-
-
     public void delete(int id){
         SQLiteDatabase db = this.getWritableDatabase();
         String deleteQuery = "DELETE FROM " + TABLE_STUDENTS
